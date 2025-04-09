@@ -19,7 +19,7 @@ search.addEventListener("click", async function () {
     city_name.innerText = `${result.location.name}, ${result.location.region} - ${result.location.country}`
     city_time.innerText = `${result.location.localtime}`
     city_temp.innerText = `${result.current.temp_c}`
+    city_weather.innerText = `${result.current.condition.text}`
     city_humidity.innerText = `${result.current.humidity}`
     city_wind.innerText = `${result.current.wind_mph}`
-    city_weather.innerText = `${result.current.condition.text}`
 })
